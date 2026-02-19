@@ -12,9 +12,9 @@ export default function Footer() {
           </div>
           <p>Your trusted travel partner for unforgettable holidays. We craft journeys, not just trips.</p>
           <div className="footer__contact">
-            <span><Phone size={14} /> +91 98765 43210</span>
+            <span><Phone size={14} /> +91 9567221734</span>
             <span><Mail size={14} /> hello@tripfactory.in</span>
-            <span><MapPin size={14} /> Mumbai, India</span>
+            <span><MapPin size={14} /> Thrissue, India</span>
           </div>
         </div>
 
