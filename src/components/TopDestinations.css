@@ -1,0 +1,120 @@
+.top-dest {
+  background: #f4f4f4;
+  padding: 60px 0;
+}
+
+.section-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.section-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.view-all {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #e02020;
+  transition: opacity 0.2s;
+}
+.view-all:hover { opacity: 0.75; }
+
+/* Grid */
+.dest-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.dest-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.dest-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+}
+
+.dest-card__img {
+  position: relative;
+  height: 170px;
+}
+
+.dest-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.03em;
+}
+
+.dest-card__body {
+  padding: 14px 16px 16px;
+}
+
+.dest-card__body h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.dest-card__body p {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.dest-card__btn {
+  background: none;
+  border: 2px solid #e02020;
+  color: #e02020;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.dest-card__btn:hover {
+  background: #e02020;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .dest-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+  .dest-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .dest-grid { grid-template-columns: 1fr; }
+}
