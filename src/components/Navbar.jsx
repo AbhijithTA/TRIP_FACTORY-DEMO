@@ -12,10 +12,10 @@ export default function Navbar() {
         <div className="navbar__logo">
           <Plane size={22} className="logo-icon" />
           <span className="logo-text">
-            <span className="logo-trip">Trip</span>
-            <span className="logo-factory">Factory</span>
+            <span className="logo-trip">Travo</span>
+            {/* <span className="logo-factory">Factory</span> */}
             
-            <span className="logo-factory">DEMOO</span>
+            {/* <span className="logo-factory">DEMOO</span> */}
           </span>
           <div className="logo-rainbow" />
         </div>
